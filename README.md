@@ -60,20 +60,25 @@ You can pass in a function as a dynamic value and it will be invoked (with no ar
     sprintf("Current timestamp: %d", Date.now) // Current timestamp: 1398005382890
     sprintf("Current date and time: %s", function() { return new Date().toString() })
 
-# Installation
+## Installation
 
-## Via Bower
+### Via Bower
 
 	bower install sprintf
 
-## Or as a node.js module
+### Or as a node.js module
 
 	npm install sprintf-js
 
-### Usage
+#### Usage
 
 	var sprintf = require("sprintf-js").sprintf,
 		vsprintf = require("sprintf-js").vsprintf;
 
 	console.log(sprintf("%2$s %3$s a %1$s", "cracker", "Polly", "wants"));
 	console.log(vsprintf("The first 4 letters of the english alphabet are: %s, %s, %s and %s", ["a", "b", "c", "d"]));
+
+## Release Notes
+
+* 1.0.0 Branch from alexei/sprintf.js
+* 1.0.1 Add `i` as an alias for a decimal specifier
